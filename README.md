@@ -31,3 +31,9 @@ Result of test with parallel streams (4 threads):
 ```
 
 This shows a total of just under 40 Mbits/sec meaning that four users will not be able to use 4k, but more than that will be able to use 720p quite comfortably.
+
+## Ubuntu Server
+
+Refer to [Self-Hosting Guide - Debian/Ubuntu server](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart)
+
+- Install required packages (`gnupg2`, `nginx-full`, etc)
