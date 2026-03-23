@@ -37,3 +37,11 @@ This shows a total of just under 40 Mbits/sec meaning that four users will not b
 Refer to [Self-Hosting Guide - Debian/Ubuntu server](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart)
 
 - Install required packages (`gnupg2`, `nginx-full`, etc)
+- Domain and DNS
+- Add Prosody package repo
+- Add Jitsi package rep
+- Configure firewall
+
+**Before installing: [Access Control](https://jitsi.github.io/handbook/docs/devops-guide/secure-domain/)** (if server is open to the world)
+
+Note that installing `jitsi-meet` (below) will also create the nginx virtual host, so set up authentication (access control above) first.
