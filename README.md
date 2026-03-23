@@ -41,7 +41,9 @@ Refer to [Self-Hosting Guide - Debian/Ubuntu server](https://jitsi.github.io/han
 - Add Prosody package repo
 - Add Jitsi package rep
 - Configure firewall
+- Install Jitsi Meet
+- Access Control
 
-**Before installing: [Access Control](https://jitsi.github.io/handbook/docs/devops-guide/secure-domain/)** (if server is open to the world)
+**Note: If the server is public, immediately stop the jitsi service (`systemd stop jitsi...`) and configure [Access Control](https://jitsi.github.io/handbook/docs/devops-guide/secure-domain/)**. Then restart the jitsi video bridge service.
 
-Note that installing `jitsi-meet` (below) will also create the nginx virtual host, so set up authentication (access control above) first.
+**Tip**: If LetsEncrypt fails during installation, you can re-run it with `sudo /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh`.
